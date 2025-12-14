@@ -1,0 +1,12 @@
+import random
+
+a = 1
+while True:
+    b = random.randint(1, 6)  
+    c = int(input("عدد بده: "))  
+    if b == c:
+        print("You win! You guessed correctly after", a, "tries.")  
+        break
+    else:
+        print("You failed. Try again.")  
+        a += 1
